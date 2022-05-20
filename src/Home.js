@@ -1,14 +1,30 @@
+// const firebaseConfig = {
+//     apiKey: "AAAAl4IZk2Y:APA91bGZbjxXhvkHETcCyRnf1T1DvIZZwzA0ZELmq-49tZOj41GV-fc2W7QdK-PKF3D2MJDpKe6yVNtPu75v0LeBebtz0Adr1dhZEARK6OCJG4vPbPJS-PCElb8FjC9HuOMSk7owU18k",
+//     authDomain: "food-feed-4a23c.firebaseapp.com",
+//     databaseURL: "https://food-feed-4a23c-default-rtdb.firebaseio.com/",
+//     projectId: "food-feed-4a23c",
+//     storageBucket: "food-feed-4a23c.appspot.com",
+//     messagingSenderId: "650722775910",
+//     appId: "1:650722775910:web:8bef32a23f3624c2256ea7"
+//   };
+  
+//   // Initialize Firebase
+  
+//   const app = initializeApp(firebaseConfig);
+//   const database = getDatabase();
 import React from 'react';
-import './Home.css'; 
-import Banner from './Banner'; 
-import Card from './Card'; 
-function Home() {
-  return (
-    <div className='home'>
-        {/* <h1>Home component</h1> */}
-        <Banner />
+import './Home.css';
+import Banner from './Banner'
+import Card from './Card'
 
-        <div className='home__section'>
+// ES7 snippets to do 'rfce'
+
+function Home() {
+    return (
+        <div className='home'>
+            <Banner />
+
+            <div className='home__section'>
             <Card
                 src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
                 title="Online Experiences"
@@ -24,29 +40,29 @@ function Home() {
                 title="Entire homes"
                 description="Comfortable private places, with room for friends or family."
             />
-        </div>
-        <div className='home__section'>
+            </div>
+            <div className='home__section'>
             <Card
                 src="https://media.nomadicmatt.com/2019/airbnb_breakup3.jpg"
-                title="3 Bedroom Flat in Nur-Sultan"
+                title="3 Bedroom Flat in Bournemouth"
                 description="Superhost with a stunning view of the beachside in Sunny Bournemouth"
-                price="₸ 50,000/night"
+                price="£130/night"
             />
             <Card
                 src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg"
-                title="Penthouse in Almaty"
-                description="Enjoy the amazing sights of Almaty with this stunning penthouse"
-                price="₸ 150,000/night"
+                title="Penthouse in London"
+                description="Enjoy the amazing sights of London with this stunning penthouse"
+                price="£350/night"
             />
             <Card
                 src="https://media.nomadicmatt.com/2018/apartment.jpg"
                 title="1 Bedroom apartment"
                 description="Superhost with great amenities and a fabolous shopping complex nearby"
-                price="₸ 20,000/night"
+                price="£70/night"
             />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Home
